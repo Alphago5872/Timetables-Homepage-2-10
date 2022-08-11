@@ -1,0 +1,110 @@
+.teachers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  &__wrapper {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    grid-gap: 2rem;
+    background-color: #e0e0e0;
+    width: 97%;
+    column-gap: 0.005rem;
+    max-width: 100rem;
+    padding: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 11px;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__profile {
+    background-color: #e0e0e0;
+    // background-color: var(-primary-color);
+    width: 31.25rem;
+    height: 40rem;
+    padding: 3.5rem;
+    border-radius: 1.1rem;
+    box-shadow: 0px 0px 20px rgba(20, 20, 20, 0.318);
+    justify-content: center;
+    text-align: center;
+    transition: ease-in-out 0.225s;
+
+    h1 {
+      text-align: center;
+      font-size: 2.75rem;
+    }
+    h2 {
+      text-align: center;
+      font-size: 1.75rem;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+    }
+    h3 {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      background: rgb(224, 224, 224);
+      transform: scale(1.05);
+      z-index: 100;
+      // border-radius: 9%; 
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+
+    &--image {
+      width: 200px;
+      margin-bottom: 20px;
+      transition: all ease-in-out 0.225s;
+    }
+
+  }
+}
+
+// .teachers {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 5rem;
+
+//   &__wrapper {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     place-items: center;
+//     grid-gap: 2rem;
+//     max-width: 95vw;
+
+//     @include respond(tab-port) {
+//       grid-template-columns: 1fr;
+//     }
+//   }
+
+//   &__profile {
+//     background-color: #e0e0e0;
+//     //  background-color: transparent;
+//     width: 100%;
+//     padding: 3rem;
+//     border-radius: 1.1rem;
+//     box-shadow: 0px 0px 22px rgba(20, 20, 20, 0.318);
+//     h2 {
+//       font-size: 2.5rem;
+//     }
+//     h3 {
+//       font-size: 1.5rem;
+//     }
+//   }
+// }

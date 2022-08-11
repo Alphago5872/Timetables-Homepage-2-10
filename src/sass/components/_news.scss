@@ -1,0 +1,56 @@
+.newsH1Tag {
+  width: fit-content;
+}
+
+.newsCard {
+  background-color: #dbdbdb;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 1.2rem;
+  margin-bottom: 3rem;
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-gap: 0.7rem;
+  }
+
+  &__card {
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 1rem;
+    transition: all ease-in-out 0.5s;
+
+    &--info {
+      margin-left: 10px;
+      margin-right: 10px;
+
+      h1 {
+        line-height: -100px;
+      }
+    }
+
+    button {
+      margin-top: 15px;
+      border-radius: 11px;
+      margin-bottom: 10px;
+      border: none;
+      font-family: inherit;
+      background-color: #d9d9d9;
+      color: black;
+      padding: 8px;
+      position: relative;
+      padding-left: 22px;
+      padding-right: 22px;
+      float: right;
+      margin-right: 1rem;
+      transition: all ease-in-out 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

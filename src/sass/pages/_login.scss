@@ -1,0 +1,192 @@
+.signin {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  &__regtangle {
+    @keyframes slideInLeft {
+      0% {
+        // transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+        clip-path: polygon(0 0, 0 100%, 50% 100%, 50% 0);
+      }
+    }
+
+    background-color: var(--primary-color);
+
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 0 0);
+
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    animation: 2s ease-out 2s 1 slideInLeft forwards;
+  }
+
+  &__regtangle2 {
+    @keyframes slideInLeft2 {
+      0% {
+      }
+      100% {
+        clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+      }
+    }
+
+    background-color: var(--primary-color);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+
+    right: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    animation: 2s ease-out 2s 1 slideInLeft2 forwards;
+  }
+
+  &__modal {
+    @keyframes onBottom {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0%);
+      }
+    }
+
+    animation: 1s ease-out 0s 1 onTop;
+    background-color: var(--gray-light-2);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1.1rem;
+    height: 42rem;
+    width: 37rem;
+    box-shadow: rgba(0, 0, 0, 0.233) 0rem 0rem 2.3rem;
+
+    &--text {
+      text-align: center;
+      position: relative;
+
+      h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    }
+
+    &--info {
+      background-color: var(--primary-gold);
+      padding: 0.5rem;
+      border-radius: 1.1rem;
+      margin-top: 1rem;
+      position: relative;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &--infoPopup {
+      background-color: var(--gray-light-3);
+      padding: 1rem;
+      margin-top: 0.5rem;
+      transition: all 0.2s;
+      z-index: 10;
+      position: absolute;
+      border-radius: 1.1rem;
+      border: var(--gray-dark-2) solid 1px;
+      width: 100%;
+      font-size: 1.1rem;
+    }
+
+    &--btn {
+      border-radius: 1.1rem;
+      height: 5rem;
+      border: none;
+      background-color: var(--primary-color);
+      color: #fff;
+      font-weight: 600;
+      transition: all 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      &:active {
+        transform: scale(0.97);
+      }
+    }
+
+    &--forgotPass {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1.2rem;
+      a {
+        color: #a09f9f;
+        font-weight: 600;
+        text-decoration: none;
+        text-decoration: underline !important;
+      }
+    }
+
+    &--form {
+      margin-top: 2rem;
+      height: 100%;
+      position: relative;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-between;
+        height: 100%;
+
+        input {
+          font-family: inherit;
+          border-radius: 1.1rem;
+          width: 100%;
+          margin-bottom: 1rem;
+          height: 4rem;
+          border: none;
+          padding: 1rem;
+          transition: all 0.2s;
+          background-color: #d4d4d4;
+          margin-top: 15px;
+          margin-bottom: 7px;
+          
+
+          &:focus {
+            transform: scale(1.03);
+            outline: var(--primary-color) 0.15rem solid;
+            box-shadow: #fff 0rem 0rem 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+}

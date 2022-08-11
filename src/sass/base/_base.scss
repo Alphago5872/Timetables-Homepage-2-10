@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+button {
+  font-family: inherit;
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+main {
+  min-height: var(--page-min-height);
+  padding: 2rem;
+  @include respond(tab-port) {
+    padding: 1.5rem;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  min-height: 100vh;
+  font-family: "Poppins", "IBM Plex Sans Thai", sans-serif;
+  color: var(--font-color);
+  position: relative;
+  @include respond(tab-port) {
+    padding: 0rem;
+  }
+}
+
+// ::selection {
+//   background-color: #fd525260;
+//   color: #fff;
+// }

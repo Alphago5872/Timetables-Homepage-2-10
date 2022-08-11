@@ -1,0 +1,129 @@
+.ttbigbox1 {
+    background-color: rgba(230, 230, 230, 1);
+    border-radius: 11px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 2rem;
+    margin-bottom: 28px;
+    box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.161);
+    width: 97%;
+    margin-bottom: 8.7em;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: scroll;
+    box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.161);
+    width: 97%;
+    margin-bottom: 8rem;
+  }
+  
+  .ttbigbox1::-webkit-scrollbar {
+    display: none;
+    overflow-x: scroll;
+  }
+  .timetable3 {
+    font-size: large;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+  
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &__time {
+      background-color: rgba(212, 212, 212, 1);
+      height: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1.1rem;
+      margin: 0rem -2rem 0rem -2rem;
+  
+      &--first {
+        margin-left: 0rem;
+      }
+  
+      &--last {
+        margin-right: 0rem;
+      }
+  
+      &--empty {
+        margin: 0rem 0rem 0rem 0rem !important;
+      }
+    }
+  }
+  
+  .timetable4 {
+    font-size: xx-large;
+    font-weight: 600;
+    display: flex;
+    margin: 2rem;
+  
+    &__year {
+      margin-right: 3rem;
+    }
+  
+    &__floor {
+      margin-left: 20rem;
+      margin-right: 10px;
+    }
+  }
+  
+  .timetable5 {
+    border-radius: 11px;
+    font-size: large;
+    background-color: rgba(212, 212, 212, 1);
+    width: 100%;
+    min-height: 16vh;
+  
+    display: flex;
+    white-space: pre-line;
+    line-height: 150%;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+  
+    &__no-hover {
+      transform: none !important;
+    }
+  
+    &:hover {
+      transform: scale(1.03);
+    }
+  
+    &:active {
+      transform: scale(0.93);
+    }
+  
+    h2 {
+      font-size: x-large;
+      text-align: center;
+      margin: 1rem;
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: -5px;
+    }
+  
+    h4 {
+      font-size: medium;
+      text-align: center;
+      margin-top: -5px;
+    }
+  
+    h6 {
+      font-size: medium;
+      text-align: center;
+      padding: 11px;
+      border-top-left-radius: 0px;
+    }
+  }
+  
+  .lunch1 {
+    grid-column: 4/5 !important;
+    grid-row: 3/6;
+  }

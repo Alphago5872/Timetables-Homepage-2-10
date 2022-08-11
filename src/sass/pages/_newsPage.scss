@@ -1,0 +1,42 @@
+.newsPage {
+  background-color: lightgrey;
+  display: grid;
+  grid-gap: 1.5rem;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  &__card {
+    background-color: #f1f1f1;
+    border-radius: 0.7rem;
+    padding: 1rem;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    button {
+      margin-top: 15px;
+      border-radius: 11px;
+      margin-bottom: 10px;
+      border: none;
+      font-family: inherit;
+      background-color: #d9d9d9;
+      color: black;
+      padding: 8px;
+      position: relative;
+      padding-left: 22px;
+      padding-right: 22px;
+      float: right;
+      margin-right: 1rem;
+      transition: all ease-in-out 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

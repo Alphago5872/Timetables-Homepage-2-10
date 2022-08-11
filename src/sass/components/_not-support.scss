@@ -1,0 +1,17 @@
+.not-support {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #fafafa;
+    padding: 1rem;
+  }
+
+  font-size: 1.5rem;
+  color: rgb(95, 95, 95);
+  text-align: center;
+  padding: 1rem;
+}

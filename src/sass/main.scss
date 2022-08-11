@@ -1,0 +1,48 @@
+// Fonts From Google Fonts (Poppins , IBM Plex Sans Thai)
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// Boxicons
+@import url("https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/header";
+@import "components/footer";
+@import "components/timetable";
+@import "components/glance";
+@import "components/glanceBox";
+@import "components/settings";
+@import "components/timePreview";
+@import "components/timetable";
+@import "components/loading";
+@import "components/teacherTTPreview";
+@import "components/socialMedia";
+@import "components/modal";
+@import "components/news";
+@import "components/not-support";
+@import "components/modalcreatett";
+
+// @import "layout/footer";
+
+// @import "lib/simpleModal";
+
+@import "pages/home";
+@import "pages/devcreds";
+@import "pages/login";
+@import "pages/settings";
+@import "pages/signIn";
+@import "pages/timetable";
+@import "pages/landing";
+@import "pages/teacherTimetable";
+@import "pages/moreTeachers";
+@import "pages/newsPage";
+@import "pages/detailedNews";
+@import "pages/loading";
+@import "pages/createTimetable";

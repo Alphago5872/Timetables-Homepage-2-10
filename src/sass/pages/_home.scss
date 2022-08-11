@@ -1,0 +1,104 @@
+.home {
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__time {
+    position: absolute;
+    right: 0;
+    margin-right: 3rem;
+    display: inline;
+    text-align: right;
+
+    h2 {
+      margin-right: 100px;
+    }
+  }
+}
+
+.hero {
+  // background-image: url('https://i.postimg.cc/MGfn91F2/image.png');
+  clip-path: circle(48.3% at 0 0);
+  background-color: #dadada;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  // position: absolute;
+
+  &__notification {
+    @keyframes fade {
+      5% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+        position: absolute;
+      }
+      90% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+      95% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-30px);
+        visibility: hidden;
+      }
+    }
+    position: absolute;
+    display: inline-block;
+    max-width: 300px;
+    padding: 20px 15px;
+    border-radius: 4px;
+    background-color: var(--gray-light-2);
+    color: var(--font-color);
+    box-shadow: 0 1px 10px rgba(0, 0, 0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    animation: fade 3.65s linear forwards;
+    right: 10px;
+    z-index: 99 !important;
+    // position: -webkit-sticky; /* Safari */
+    // position: sticky;
+    // top: 0;
+    left: 7px;
+  }
+
+  &__progress {
+    @keyframes progress {
+      to {
+        width: calc(100% - 10px);
+        // visibility: hidden;
+      }
+    }
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, #529bdb, #3250bf);
+    border-radius: 4px;
+    animation: progress 3s 0.25s linear forwards;
+
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+
+  &__wrapper {
+    background-color: #529bdb;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+}

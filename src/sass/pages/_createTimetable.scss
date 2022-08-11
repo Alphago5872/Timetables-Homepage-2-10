@@ -1,0 +1,13 @@
+.create-timetable {
+  &__info {
+    &--item {
+      border-radius: 1.1rem;
+      background-color: var(--gray-light-2);
+      padding: 1rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

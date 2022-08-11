@@ -1,0 +1,173 @@
+.ttbigbox {
+  background-color: rgba(230, 230, 230, 1);
+  border-radius: 11px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 2rem;
+  margin-bottom: 28px;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.161);
+  width: 97%;
+  margin-bottom: 8.7em;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: scroll;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.161);
+  width: 97%;
+  margin-bottom: 8rem;
+}
+
+.ttbigbox::-webkit-scrollbar {
+  display: none;
+}
+.timetable {
+  font-size: large;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-gap: 10px;
+  overflow: hidden;
+  overflow-x: scroll;
+  min-width: 120rem;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__time {
+    background-color: rgba(212, 212, 212, 1);
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.1rem;
+    margin: 0rem -2rem 0rem -2rem;
+    grid-column: span 3;
+
+    &--first {
+      margin-left: 0rem;
+    }
+
+    &--last {
+      margin-right: 0rem;
+    }
+
+    &--empty {
+      margin: 0rem 0rem 0rem 0rem !important;
+      grid-column: span 3 !important;
+    }
+  }
+}
+
+.timetable1 {
+  font-size: 35px;
+  font-weight: 600;
+  display: flex;
+  margin-top: 1rem !important;
+  margin: 2rem;
+  justify-content: space-between;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__right {
+    display: flex;
+    gap: 2rem;
+  }
+  &__floor {
+    margin-left: 20rem;
+    margin-right: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 30px;
+  }
+}
+
+.timetable2 {
+  border-radius: 11px;
+  font-size: large;
+  background-color: rgba(212, 212, 212, 1);
+  width: 100%;
+  min-height: 16vh;
+
+  display: flex;
+  white-space: pre-line;
+  line-height: 150%;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+
+  &__no-hover {
+    transform: none !important;
+  }
+
+  h2 {
+    font-size: x-large;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -5px;
+  }
+
+  h4 {
+    font-size: medium;
+    text-align: center;
+    margin-top: -5px;
+  }
+
+  h6 {
+    font-size: medium;
+    text-align: center;
+    padding: 11px;
+    border-top-left-radius: 0px;
+  }
+}
+
+.lunch {
+  grid-column: 10/13 !important;
+  grid-row: 2/7 !important;
+
+  &__summer {
+    grid-column: 10/13 !important;
+    grid-row: 3/6 !important;
+  }
+}
+
+// .box {
+//   background-color: #d4d4d4;
+//   padding-left: 20px;
+//   width: 15%;
+//   height: 30%;
+//   border-radius: 11px;
+//   display: inline-block;
+//   margin-left: 5px;
+// }
+// .weekday {
+//   background-color: var(--color-pink);
+//   margin: -5px;
+//   width: 13%;
+//   height: 40px;
+//   border-radius: 11px;
+//   color: var(--font-color);
+//   display: inline-block;
+//   margin-bottom: 5px;
+//   margin-left: 10px;
+// }
+
+// .DayoftheWeek {
+//   position: relative;
+//   top: 25%;
+//   left: 35%;
+// }
+
+// .lunch {
+//   background-color: black;
+// }
